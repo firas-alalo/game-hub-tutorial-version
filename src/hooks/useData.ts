@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import apiClient from "../services/api-client";
 import { CanceledError } from "axios";
 
+// Describe the structure of the object that will be returned from the API
 export interface FetchResponse<T> {
     count: number;
     results: T[];
